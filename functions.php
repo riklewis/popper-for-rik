@@ -141,12 +141,30 @@ function popper_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
+	// Font Awesome 5 Pro
+	wp_enqueue_script( 'popper-fa-core', get_template_directory_uri() . '/js/fontawesome.min.js' );
+	wp_enqueue_script( 'popper-fa-brands', get_template_directory_uri() . '/js/fa-brands.min.js', array( 'popper-fa-core' ) );
+	wp_enqueue_script( 'popper-fa-regular', get_template_directory_uri() . '/js/fa-regular.min.js', array( 'popper-fa-core' ) );
+
 	wp_localize_script( 'popper-functions', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'popper' ) . '</span>',
 		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'popper' ) . '</span>',
 	) );
 }
 add_action( 'wp_enqueue_scripts', 'popper_scripts' );
+
+/**
+ * Defer Font Awesome 5 Pro icon loading
+ */
+function defer_fa_scripts( $tag, $handle, $src )
+{
+  if( $handle === 'popper-fa-brands' || $handle === 'popper-fa-regular')  {
+    return str_replace( '<script', '<script defer', $tag );
+  }
+  return $tag;
+}
+add_filter( 'script_loader_tag', 'defer_fa_scripts', 10, 3 );
+
 
 /**
  * Implement the Custom Header feature.

@@ -142,9 +142,13 @@ function popper_scripts() {
 	}
 
 	// Font Awesome 5 Pro
-	wp_enqueue_script( 'popper-fa-core', get_template_directory_uri() . '/js/fontawesome.min.js' );
-	wp_enqueue_script( 'popper-fa-brands', get_template_directory_uri() . '/js/fa-brands.min.js', array( 'popper-fa-core' ) );
-	wp_enqueue_script( 'popper-fa-regular', get_template_directory_uri() . '/js/fa-regular.min.js', array( 'popper-fa-core' ) );
+	wp_enqueue_script( 'popper-fa-core', get_template_directory_uri() . '/js/fontawesome.min.js', array(), '5.0.6' );
+	wp_enqueue_script( 'popper-fa-brands', get_template_directory_uri() . '/js/fa-brands.min.js', array( 'popper-fa-core' ), '5.0.6' );
+	wp_enqueue_script( 'popper-fa-regular', get_template_directory_uri() . '/js/fa-regular.min.js', array( 'popper-fa-core' ), '5.0.6' );
+
+	// Highlight JS
+  wp_enqueue_script( 'popper-highlight', get_template_directory_uri() . '/js/highlight.pack.js', array(), '9.12.0' );
+	wp_enqueue_style( 'popper-highlight-theme', get_template_directory_uri() . '/styles/atom-one-dark.css', array(), '9.12.0' );
 
 	wp_localize_script( 'popper-functions', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'popper' ) . '</span>',

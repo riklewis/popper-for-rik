@@ -133,9 +133,15 @@
 	// Wrap centered images in a new figure element
 	$( 'img.aligncenter' ).wrap( '<figure class="centered-image"></figure>');
 
+  //Add primary menu icons
+	$('#menu-item-107 a').prepend('<i class="far fa-home"></i><br>'); //home
+	$('#menu-item-108 a').prepend('<i class="far fa-info"></i><br>'); //about
+	$('#menu-item-109 a').prepend('<i class="far fa-comments"></i><br>'); //contact
+	$('#menu-item-110 a').prepend('<i class="far fa-alarm-clock"></i><br>'); //now
+
 	// Highlight HTML/CSS/JS code blocks
 	$('pre code').each(function(i, block) {
 		hljs.highlightBlock(block);
-	});	
+	});
 
 } )( jQuery );

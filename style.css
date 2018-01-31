@@ -1374,13 +1374,13 @@ a:active {
 }
 
 .menu-toggle.hide {
-	bottom: -2.5em;
+	top: -2.5em;
 }
 
 /* Make sure the button doesn't hide when menu is open. */
 
 .toggled .menu-toggle.hide {
-	bottom: 1em;
+	top: 1em;
 }
 
 

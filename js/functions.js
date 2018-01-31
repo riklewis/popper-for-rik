@@ -133,9 +133,9 @@
 	// Wrap centered images in a new figure element
 	$( 'img.aligncenter' ).wrap( '<figure class="centered-image"></figure>');
 
-} )( jQuery );
+	// Highlight HTML/CSS/JS code blocks
+	$('pre code').each(function(i, block) {
+		hljs.highlightBlock(block);
+	});	
 
-// Highlight HTML/CSS/JS code blocks
-$('pre code').each(function(i, block) {
-	hljs.highlightBlock(block);
-});
+} )( jQuery );

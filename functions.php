@@ -125,7 +125,7 @@ add_action( 'widgets_init', 'popper_widgets_init' );
  * Enqueue scripts and styles.
  */
 function popper_scripts() {
-	wp_enqueue_style( 'popper-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'popper-style', get_stylesheet_uri() , array(), '1.0.0a');
 
 	// Fonts: Fira Sans and Merriweather, https://www.google.com/fonts
 	wp_enqueue_style( 'popper-google-fonts', '//fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic|Merriweather:400,300,300italic,400italic,700,700italic' );

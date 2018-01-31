@@ -32,24 +32,6 @@
 		<?php }
 		?>
 
-		<div class="site-logo">
-			<?php $site_title = get_bloginfo( 'name' ); ?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<div class="screen-reader-text">
-					<?php printf( esc_html__('Go to the home page of %1$s', 'popper'), $site_title ); ?>
-				</div>
-				<?php
-					// Display logo if Custom Logo or Site Icon is defined, otherwise display First Letter
-					if ( popper_custom_logo() ) {
-						echo popper_custom_logo();
-					} else { ?>
-						<div class="site-firstletter" aria-hidden="true">
-							<?php echo substr($site_title, 0, 1); ?>
-						</div>
-				<?php } ?>
-			</a>
-		</div>
-
 		<div class="site-branding<?php if ( !is_front_page() && is_singular() ) { echo ' screen-reader-text'; } ?>">
 			<?php if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

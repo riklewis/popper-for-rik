@@ -628,6 +628,15 @@ a:active {
 	z-index: 100000; /* Above WP toolbar. */
 }
 
+.screen-reader-text.skip-link:focus {
+	background: transparent;
+	color: #fff;
+	text-decoration: underline;
+	outline: solid 1px #b3b3b3;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 1em;
+}
+
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
@@ -1176,7 +1185,7 @@ a:active {
 }
 
 .site-title {
-	margin: 1.7em 1em 0;
+	margin: .2em 1em;
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 2.4em;
 	font-weight: bold;
@@ -1195,13 +1204,10 @@ a:active {
 	text-decoration: underline;
 }
 
-.site-title::after {
-	display: block;
-	content: "";
-	margin: .7em auto 0;
-	width: 3em;
-	border-bottom: solid 1px #fff;
-	opacity: .5;
+@media screen and (min-width: 50em) {
+	.site-title {
+		margin: .7em 1em 0;
+	}
 }
 
 .site-description {
@@ -1356,8 +1362,8 @@ a:active {
 .menu-toggle {
 	position: fixed;
 	z-index: 100;
-	bottom: 1em;
-	left: 1em;
+	top: 1em;
+	right: 1em;
 	font-size: 1em;
 	font-weight: 400;
 	text-transform: uppercase;

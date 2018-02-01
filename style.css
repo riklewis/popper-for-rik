@@ -702,7 +702,6 @@ a:active {
 	background: #fff;
 }
 
-
 @media screen and (min-width: 45em) {
 	#secondary {
 		display: flex;
@@ -717,8 +716,6 @@ a:active {
 		margin: 0 .9em 1.8em;
 	}
 }
-
-
 
 .widget-title {
 	margin-top: .5em;
@@ -774,7 +771,6 @@ a:active {
 }
 
 /* Archive and Categories widgets */
-
 .widget_archive li {
 	color: #7D7D7D;
 }
@@ -1008,6 +1004,10 @@ a:active {
 .widget_popper_recent_posts a:hover .title,
 .widget_popper_recent_posts a:focus .title {
 	text-decoration: underline;
+}
+
+.social-widget {
+	font-size: 2em;
 }
 
 /*

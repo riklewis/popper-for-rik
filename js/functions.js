@@ -133,11 +133,19 @@
 	// Wrap centered images in a new figure element
 	$( 'img.aligncenter' ).wrap( '<figure class="centered-image"></figure>');
 
-  //Add primary menu icons
-	$('#menu-item-107 a').prepend('<i class="far fa-home"></i><br>'); //home
-	$('#menu-item-108 a').prepend('<i class="far fa-info"></i><br>'); //about
-	$('#menu-item-109 a').prepend('<i class="far fa-comments"></i><br>'); //contact
-	$('#menu-item-110 a').prepend('<i class="far fa-alarm-clock"></i><br>'); //now
+  // Add primary menu icons - todo: current should be solid
+	function addMenuIcon(listItemId,iconName) {
+		var fa = "far";
+		var li = $("#"+listItemId);
+		if(li.hasClass("current-menu-item") || li.hasClass("current-menu-ancestor") || li.hasClass("current_page_item") || li.hasClass("current_page_ancestor")) {
+			fa = "fas";
+		}
+    li.find("a").prepend('<i class="'+fa+' '+iconName+'"></i><br>');
+	}
+	addMenuIcon("menu-item-107","fa-home"); //home
+	addMenuIcon("menu-item-108","fa-info"); //about
+	addMenuIcon("menu-item-109","fa-comments"); //contact
+	addMenuIcon("menu-item-110","fa-alarm-clock"); //now
 
 	// Highlight HTML/CSS/JS code blocks
 	$('pre code').each(function(i, block) {

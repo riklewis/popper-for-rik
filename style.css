@@ -1383,7 +1383,6 @@ a:active {
 	top: 1em;
 }
 
-
 .menu-toggle:hover,
 .menu-toggle:focus {
 	text-decoration: underline;
@@ -1529,6 +1528,10 @@ a:active {
 		width: 27px;
 	}
 
+  #primary-menu svg {
+		height: 2em;
+		width: auto;
+	}
 }
 
 /*--------------------------------------------------------------

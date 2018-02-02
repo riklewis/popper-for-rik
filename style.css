@@ -1006,8 +1006,24 @@ a:active {
 	text-decoration: underline;
 }
 
-.social-widget {
-	font-size: 2em;
+.site-content .widget .social-widget {
+	font-size: 1.5em;
+}
+.site-content .widget .social-widget li {
+	display: inline-block;
+  margin: 0 2px 5px 0;
+  text-align: center;
+}
+.site-content .widget .social-widget li a {
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #000;
+	display: inline-block;
+}
+.site-content .widget .social-widget li a:focus, .site-content .widget .social-widget li a:hover {
+  background-color: #000;
+	color: #fff;
 }
 
 /*

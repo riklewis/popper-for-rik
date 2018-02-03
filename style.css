@@ -1502,7 +1502,6 @@ a:active {
 		background: transparent;
 		color: #fff;
 		text-decoration: underline;
-		outline: solid 1px #b3b3b3;
 	}
 
 	/* Create hover and focus contrast on drop-down items */
@@ -1547,6 +1546,14 @@ a:active {
   #primary-menu svg {
 		height: 2em;
 		width: auto;
+	}
+
+	.main-navigation a svg, .main-navigation a svg {
+		transition: 400ms;
+	}
+
+	.main-navigation a:hover svg, .main-navigation a:focus svg {
+		transform: scale(1.3);
 	}
 }
 
@@ -1892,21 +1899,16 @@ a:active {
 }
 
 .entry-title {
-	margin-top: 2em;
-	margin-bottom: 1em;
+	font-family: "Fredericka the Great", "Fira Sans", sans-serif;
+	margin-top: 1.6em;
+	margin-bottom: .8em;
 	font-size: 2em;
 	line-height: 1.3em;
 	text-align: center;
 	color: #000;
 	word-wrap: break-word; /* Catch and wrap very long words on small screens */
-}
-
-@media screen and (min-width: 40em) {
-	.entry-title {
-		margin-top: 1.5em;
-		font-size: 2.8em;
-		line-height: 1.3em;
-	}
+	font-weight: 400;
+  text-transform: uppercase;
 }
 
 .entry-title a {

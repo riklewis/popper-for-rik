@@ -1202,9 +1202,9 @@ a:active {
 
 .site-title {
 	margin: .2em 1em;
-	font-family: 'Fira Sans', sans-serif;
-	font-size: 2.4em;
-	font-weight: bold;
+	font-family: "Fredericka the Great", "Fira Sans", sans-serif;
+	font-weight: 400;
+	font-size: 2.5em;
 	line-height: 1.3em;
 	color: #fff;
 	text-transform: uppercase;
@@ -1442,6 +1442,27 @@ a:active {
 	display: block;
 }
 
+#primary-menu br {
+	display: none;
+}
+
+#primary-menu .fa-w-8 {
+	margin-right: 16px;
+}
+#primary-menu .fa-w-16 {
+	margin-right: 8px;
+}
+#primary-menu .fa-w-18 {
+	margin-right: 6px;
+}
+
+.menu-main-container {
+  position: fixed;
+  top: 5em;
+  left: 1em;
+  right: 1em;
+}
+
 /* Horizontal menu on wide screens */
 @media screen and (min-width: 50em) {
 
@@ -1546,6 +1567,21 @@ a:active {
   #primary-menu svg {
 		height: 2em;
 		width: auto;
+	}
+
+	#primary-menu .fa-w-8, #primary-menu .fa-w-16, #primary-menu .fa-w-18 {
+		margin-right: 0;
+	}
+
+	#primary-menu br {
+		display: inline;
+	}
+
+	.menu-main-container {
+	  position: static;
+	  top: auto;
+	  left: auto;
+	  right: auto;
 	}
 
 	.main-navigation a svg, .main-navigation a svg {

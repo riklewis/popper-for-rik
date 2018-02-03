@@ -142,7 +142,6 @@
 		}
     li.find("a").prepend('<i class="'+fa+' '+iconName+'"></i><br>');
 	}
-	addMenuIcon("menu-item-107","fa-home"); //home
 	addMenuIcon("menu-item-108","fa-info"); //about
 	addMenuIcon("menu-item-109","fa-comments"); //contact
 	addMenuIcon("menu-item-110","fa-alarm-clock"); //now

@@ -734,7 +734,7 @@ a:active {
 
 .site-content .widget li {
 	display: block;
-	padding: .3em 0;
+	padding: 4px 0;
 }
 
 .widget li ul,
@@ -1011,7 +1011,7 @@ a:active {
 }
 .site-content .widget .social-widget li {
 	display: inline-block;
-  margin: 0 2px 5px 0;
+  margin: 0 2px 0 0;
   text-align: center;
 }
 .site-content .widget .social-widget li a {

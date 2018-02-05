@@ -15,9 +15,15 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'popper' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'popper' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s', 'popper' ), '<a href="https://wordpress.org/themes/popper/" target="_none"	rel="nofollow">Popper</a>' ); ?>
+			<div class="column column-1">
+	      One
+			</div><!-- .column-1 -->
+			<div class="column column-2">
+	      Two
+			</div><!-- .column-2 -->
+			<div class="column column-3">
+	      Three
+			</div><!-- .column-3 -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

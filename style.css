@@ -2757,7 +2757,7 @@ img.alignleft {
 --------------------------------------------------------------*/
 
 .site-footer {
-	padding: 6em 1em;
+	padding: 4em 1em;
 	font-family: "Fira Sans", sans-serif;
 	text-align: center;
 	color: #fff;
@@ -2766,4 +2766,20 @@ img.alignleft {
 
 .site-footer a {
 	color: #fff;
+}
+
+.site-info {
+	margin: 0 auto;
+	max-width: 62.5em
+}
+
+@media (min-width: 40em) {
+	.site-footer .column {
+    float: left;
+    width: 29%;
+	}
+
+	.site-footer .column-2 {
+	  margin: 0 6.49%;
+	}
 }

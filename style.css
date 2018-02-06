@@ -2795,6 +2795,14 @@ img.alignleft {
 	margin-right: 6px;
 }
 
+.site-footer .social-links svg {
+	transition: 400ms;
+}
+
+.site-footer .social-links svg:hover, .site-footer .social-links svg:focus {
+  transform: scale(1.3);
+}
+
 .site-info {
 	margin: 0 auto;
 	max-width: 62.5em

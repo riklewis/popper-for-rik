@@ -2757,15 +2757,42 @@ img.alignleft {
 --------------------------------------------------------------*/
 
 .site-footer {
-	padding: 4em 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 2.5em;
 	font-family: "Fira Sans", sans-serif;
 	text-align: center;
 	color: #fff;
 	background: #000;
 }
 
+.site-footer h3 {
+	font-family: "Fredericka the Great", "Fira Sans", sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+
+.site-footer p {
+	font-size: .8em;
+	margin-bottom: 0;
+}
+
 .site-footer a {
 	color: #fff;
+}
+
+.site-footer .social-links {
+  float:left;
+	clear: both;
+  width: 100%;
+	font-size: 1.5em;
+	margin-top: 1.5em;
+}
+
+.site-footer .social-links a {
+	margin-left: 6px;
+	margin-right: 6px;
 }
 
 .site-info {

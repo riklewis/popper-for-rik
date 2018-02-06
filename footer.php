@@ -16,15 +16,39 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<div class="column column-1">
-	      One
+	      <h3>About Rik</h3>
+				<p><a href="https://www.rik.onl/about/">Rik Lewis</a> is a Certified Geek, specialising in Uniface, PHP, javascript/jQuery and progressive web apps. He rarely talks about himself in the third person...</p>
 			</div><!-- .column-1 -->
 			<div class="column column-2">
-	      Two
+	      <h3>Copyright <?php echo date("Y");?></h3>
+				<p>All opinions expressed on this site are my own. Content is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0 International License</a>. In short; feel free to share and adapt, but provide attribution.</p>
 			</div><!-- .column-2 -->
 			<div class="column column-3">
-	      Three
+	      <h3>Navigation</h3>
+				<p>
+				  <a href="#page">Back to top</a>,&nbsp;
+				  <a href="https://www.rik.onl">Home</a>,&nbsp;
+				  <a href="https://www.rik.onl/about/">About</a>,&nbsp;
+				  <a href="https://www.rik.onl/projects/">Projects</a>,&nbsp;
+				  <a href="https://www.rik.onl/now/">Now</a>,&nbsp;
+				  <a href="https://www.rik.onl/contact/">Contact</a>
+				</p>
 			</div><!-- .column-3 -->
 		</div><!-- .site-info -->
+		<div class="social-links">
+			<a href="https://www.facebook.com/riklewis" target="_blank" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+			<a href="https://www.twitter.com/rik_lewis" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+			<a href="https://www.linkedin.com/in/riklewis" target="_blank" rel="noopener"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+			<a href="https://plus.google.com/102686458792143420469" target="_blank" rel="noopener"><i class="fab fa-google-plus-g" aria-hidden="true"></i><span class="sr-only">Google Plus</span></a>
+			<a href="https://stackoverflow.com/users/4593106/rik-lewis" target="_blank" rel="noopener"><i class="fab fa-stack-overflow" aria-hidden="true"></i><span class="sr-only">Stack Overflow</span></a>
+			<a href="https://github.com/riklewis" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">Github</span></a>
+			<a href="https://www.npmjs.com/~riklewis" target="_blank" rel="noopener"><i class="fab fa-npm" aria-hidden="true"></i><span class="sr-only">NPM</span></a>
+			<a href="mailto:rik@rik.onl" target="_blank" rel="noopener"><i class="far fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></a>
+			<a href="skype:rik.p.lewis?add" target="_blank" rel="noopener"><i class="fab fa-skype" aria-hidden="true"></i><span class="sr-only">Skype</span></a>
+			<a href="feed/" target="_blank" rel="noopener"><i class="fas fa-rss" aria-hidden="true"></i><span class="sr-only">RSS Feed</span></a>
+			<a href="https://www.paypal.me/riklewis" target="_blank" rel="noopener"><i class="fab fa-paypal" aria-hidden="true"></i><span class="sr-only">Paypal</span></a>
+			<a href="https://www.patreon.com/riklewis" target="_blank" rel="noopener"><i class="fab fa-patreon" aria-hidden="true"></i><span class="sr-only">Patreon</span></a>
+		</div><!-- .social-links -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

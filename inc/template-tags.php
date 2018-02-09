@@ -35,7 +35,7 @@ function popper_posted_on() {
 	echo '<span class="share-post"><ul>';
 
 	echo '<li class="share-post-item share-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=' . $permalink .'"><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a></li>';
-	echo '<li class="share-post-item share-twitter"><a href="https://twitter.com/share?url=' . $permalink . '&text=' . $post_title . '"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Share on Twitter</span></a></li>';
+	echo '<li class="share-post-item share-twitter"><a href="https://twitter.com/share?url=' . $permalink . '&text=' . $post_title . '&via=rik_lewis"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Share on Twitter</span></a></li>';
 	echo '<li class="share-post-item share-linkedin"><a href="https://www.linkedin.com/shareArticle?mini=true&url=' . $permalink .'"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">Share on LinkedIn</span></a></li>';
 	echo '<li class="share-post-item share-googleplus"><a href="https://plus.google.com/share?url=' . $permalink .'"><i class="fab fa-google-plus-g" aria-hidden="true"></i><span class="sr-only">Share on Google Plus</span></a></li>';
 	echo '<li class="share-post-item share-reddit"><a href="https://reddit.com/submit?url=' . $permalink .'&title=' . $post_title . '"><i class="fab fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Share on Reddit</span></a></li>';

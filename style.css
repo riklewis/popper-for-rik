@@ -2009,6 +2009,14 @@ html.scrolled .menu-toggle {
 	padding: 5px;
 }
 
+.share-post a:visited {
+	color: #555;
+}
+
+#content .share-post a:hover, #content.share-post a:focus {
+	border-bottom: none;
+}
+
 .site-content li {
 	line-height: 1.6em;
 	padding-top: .5em;

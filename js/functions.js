@@ -153,6 +153,12 @@
 	addMenuIcon("menu-item-109","fa-comments"); //contact
 	addMenuIcon("menu-item-110","fa-alarm-clock"); //now
 
+	// Open social share links in new windows
+	$(".share-post").on("click","a",function() {
+		window.open($(this).attr("href"),"share-post","width=600,height=300");
+		return false;
+	});
+
 	// Highlight HTML/CSS/JS code blocks
 	$('pre code').each(function(i, block) {
 		hljs.highlightBlock(block);

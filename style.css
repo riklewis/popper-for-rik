@@ -1777,12 +1777,25 @@ html.scrolled .menu-toggle {
 	font-size: 1.5em;
 }
 
-.entry-header .index-entry-meta {
-	font-size: .8em;
-}
-
 .entry-content.index-excerpt {
 	margin-top: .3em;
+	position: relative;
+}
+
+.entry-content.index-excerpt p {
+	margin-bottom: 0;
+}
+
+.entry-content.index-excerpt:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+  width: 100%;
+  height: 4em;
 }
 
 @media screen and (min-width: 30em) {
@@ -1795,18 +1808,6 @@ html.scrolled .menu-toggle {
 	.index-entry-meta {
 		font-size: 1em;
 	}
-
-	.index-entry-meta .byline,
-	.index-entry-meta .posted-on,
-	.index-entry-meta .comments-link {
-		display: inline-block;
-	}
-
-	.index-entry-meta .byline::after,
-	.index-entry-meta .comments-link::before {
-		content: "|";
-		padding: 0 1em;
-	}
 }
 
 .continue-reading {
@@ -1816,7 +1817,6 @@ html.scrolled .menu-toggle {
 .continue-reading a,
 .entry-content .continue-reading a {
 	display: inline-block;
-	margin: 1em auto;
 	padding: 1em 2em;
 	font-family: "Fira Sans", sans-serif;
 	text-decoration: none;
@@ -1925,19 +1925,9 @@ html.scrolled .menu-toggle {
 }
 
 .entry-meta {
-	margin: 0 -1.473684210526316em;
-	padding: 2em 1.473684210526316em;
 	font-family: "Fira Sans", sans-serif;
-	font-size: 95%;
 	font-style: italic;
 	text-align: center;
-	background: #eee;
-}
-
-@media screen and (min-width: 30em) {
-	.entry-meta {
-		margin: 0 -1.894736842105263em;
-	}
 }
 
 /* Conditions for no-sidebar layout */
@@ -1945,9 +1935,7 @@ html.scrolled .menu-toggle {
 	.entry-meta {
 		position: relative;
 		width: 100%;
-		width: 100vw;
 		left: 0;
-		left: calc((-100vw + 51.2em) / 2);
 		overflow: hidden;
 	}
 }
@@ -1956,32 +1944,8 @@ html.scrolled .menu-toggle {
 @media screen and (min-width: 65em) {
 	.sidebar-right .entry-meta {
 		width: 100%;
-		width: calc(100vw - 306px);
 		left: 0;
 		margin: 0;
-	}
-}
-
-@media screen and (min-width: 70.75em) {
-	.sidebar-right .entry-meta {
-		left: calc((-100vw + 65.3em) / 2);
-	}
-}
-
-/* Conditions for sidebar-left layout */
-@media screen and (min-width: 65em) {
-	.sidebar-left .entry-meta {
-		width: 100%;
-		width: calc(100vw - 306px);
-		left: 0;
-		right: 0;
-		margin: 0;
-	}
-}
-
-@media screen and (min-width: 70.75em) {
-	.sidebar-left .entry-meta {
-		left: calc((-100vw + 65.3em) / 2);
 	}
 }
 
@@ -2110,7 +2074,6 @@ html.scrolled .menu-toggle {
 .entry-footer,
 .index-entry-meta{
 	font-family: "Fira Sans", sans-serif;
-	font-size: 95%;
 	font-style: italic;
 	text-align: center;
 }

@@ -1987,6 +1987,28 @@ html.scrolled .menu-toggle {
 	display: inline;
 }
 
+.share-post ul {
+	list-style: none;
+	margin-bottom: 0;
+	margin-top: 1em;
+}
+
+.share-post li {
+	display: inline-block;
+}
+
+.share-post a {
+	color: #555;
+	background-color: #eee;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	margin-left: 6px;
+  margin-right: 6px;
+	padding: 5px;
+}
+
 .site-content li {
 	line-height: 1.6em;
 	padding-top: .5em;
@@ -2104,6 +2126,8 @@ html.scrolled .menu-toggle {
 	text-decoration: none;
 	color: #000;
 }
+
+
 
 /*--------------------------------------------------------------
 ## Asides

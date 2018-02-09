@@ -27,10 +27,22 @@ function popper_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
+  $post_title = substr(esc_url(get_the_author_meta('display_name') . ' - ' . get_the_title()),7);
+	$permalink = esc_url(get_permalink());
+
 	echo '<div class="meta-content">';
 	echo '<span class="posted-on">' . $time_string . ' </span>';
-	echo '<span class="share-post">[Share links]</span>'; //todo
+	echo '<span class="share-post"><ul>';
 
+	echo '<li class="share-post-item share-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=' . $permalink .'"><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a></li>';
+	echo '<li class="share-post-item share-twitter"><a href="https://twitter.com/share?url=' . $permalink . '&text=' . $post_title . '"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Share on Twitter</span></a></li>';
+	echo '<li class="share-post-item share-linkedin"><a href="https://www.linkedin.com/shareArticle?mini=true&url=' . $permalink .'"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">Share on LinkedIn</span></a></li>';
+	echo '<li class="share-post-item share-googleplus"><a href="https://plus.google.com/share?url=' . $permalink .'"><i class="fab fa-google-plus-g" aria-hidden="true"></i><span class="sr-only">Share on Google Plus</span></a></li>';
+	echo '<li class="share-post-item share-reddit"><a href="https://reddit.com/submit?url=' . $permalink .'&title=' . $post_title . '"><i class="fab fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Share on Reddit</span></a></li>';
+	echo '<li class="share-post-item share-pocket"><a href="https://getpocket.com/save?url=' . $permalink .'&title=' . $post_title . '"><i class="fab fa-get-pocket" aria-hidden="true"></i><span class="sr-only">Add to Pocket</span></a></li>';
+	echo '<li class="share-post-item share-email"><a href="mailto:?subject=' . $post_title . '&body=' . $permalink .'"><i class="far fa-envelope" aria-hidden="true"></i><span class="sr-only">Send via email</span></a></li>';
+
+  echo '</ul></span>';
 	echo '</div><!-- .meta-content -->';
 
 }

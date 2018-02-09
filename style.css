@@ -630,9 +630,9 @@ a:active {
 
 .screen-reader-text.skip-link:focus {
 	background: transparent;
-	color: #fff;
+	color: #eee;
 	text-decoration: underline;
-	outline: solid 1px #b3b3b3;
+	outline: solid 1px #eee;
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 1em;
 }
@@ -872,7 +872,7 @@ a:active {
 	font-size: .8em;
 	text-align: center;
 	background: #d6d6d6;
-	border: 3px solid white;
+	border: 3px solid #fff;
 }
 
 .widget_calendar th {
@@ -1158,56 +1158,19 @@ a:active {
 	background-size: cover;
 }
 
-.site-logo {
-	position: relative;
-}
-
-.site-logo a {
-	position: absolute;
-	z-index: 10;
-	top: 1em;
-	left: 1em;
-	display: block;
-	width: 2em;
-	height: 2em;
-	background: black;
-	border: 2px solid white;
-	color: white;
-	text-decoration: none;
-	overflow: hidden;
-}
-
-.site-logo a:hover,
-.site-logo a:focus {
-	outline: 2px solid white;
-}
-
-.site-firstletter {
-	font-family: 'Fira Sans', sans-serif;
-	font-size: 1.5em;
-	font-weight: 500;
-	text-align: center;
-	line-height: 1.3em;
-}
-
-.site-logo a:hover .site-firstletter,
-.site-logo a:focus .site-firstletter{
-	background: white;
-	color: black;
-}
-
 .site-branding {
 	text-align: center;
 }
 
 .site-title {
-	margin: .2em 1em;
+	margin: .2em .5em;
 	font-family: "Fredericka the Great", "Fira Sans", sans-serif;
 	font-weight: 400;
 	font-size: 2.5em;
 	line-height: 1.3em;
 	color: #fff;
 	text-transform: uppercase;
+	text-align: left;
 }
 
 .site-title a {
@@ -1223,6 +1186,7 @@ a:active {
 @media screen and (min-width: 50em) {
 	.site-title {
 		margin: .7em 1em 0;
+		text-align: center;
 	}
 }
 
@@ -1282,18 +1246,18 @@ a:active {
 	font-weight: 400;
 	text-decoration: none;
 	line-height: 1.6em;
-	color: white;
+	color: #fff;
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-	background: #fff;
+	background: #eee;
 	color: #000;
 }
 
 .main-navigation a,
 .main-navigation ul ul li:lastchild a {
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid #eee;
 }
 
 .main-navigation ul li:last-child a {
@@ -1343,9 +1307,9 @@ a:active {
 	padding: 0;
 	font-family: 'icons';
 	background-color: #000;
-	border: 1px solid #fff;
+	border: 1px solid #eee;
 	content: "";
-	color: #fff;
+	color: #eee;
 	text-transform: lowercase; /* Stop screen readers from reading the text as capital letters */
 }
 
@@ -1361,7 +1325,7 @@ a:active {
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
-	background-color: #fff;
+	background-color: #eee;
 	color: #000;
 }
 
@@ -1381,12 +1345,14 @@ a:active {
 	top: 1em;
 	right: 1em;
 	font-size: 1em;
-	font-weight: 400;
-	text-transform: uppercase;
-	background-color: #000;
-	color: #fff;
-	border: solid 2px #fff;
+	background-color: transparent;
+	color: #eee;
+	border: solid 2px #eee;
 	transition: all ease-out 400ms;
+}
+
+html.scrolled .menu-toggle {
+	background-color: #343331;
 }
 
 .menu-toggle.hide {
@@ -1449,6 +1415,9 @@ a:active {
 #primary-menu .fa-w-8 {
 	margin-right: 16px;
 }
+#primary-menu .fa-w-12 {
+	margin-right: 12px;
+}
 #primary-menu .fa-w-16 {
 	margin-right: 8px;
 }
@@ -1473,8 +1442,6 @@ a:active {
 		min-height: 3.5em;
 		margin: 0 auto;
 		padding: 0 3.5em;
-		background-color: #000;
-		background-color: hsla(0, 0%, 0%, .7);
 	}
 
 	.nav-menu {
@@ -1521,7 +1488,7 @@ a:active {
 	.main-navigation a:hover,
 	.main-navigation a:focus {
 		background: transparent;
-		color: #fff;
+		color: #eee;
 		text-decoration: underline;
 	}
 
@@ -1569,7 +1536,7 @@ a:active {
 		width: auto;
 	}
 
-	#primary-menu .fa-w-8, #primary-menu .fa-w-16, #primary-menu .fa-w-18 {
+	#primary-menu .fa-w-8, #primary-menu .fa-w-12, #primary-menu .fa-w-16, #primary-menu .fa-w-18 {
 		margin-right: 0;
 	}
 
@@ -2348,7 +2315,7 @@ a:active {
 .reply a:hover,
 .reply a:focus {
 	background: #000;
-	color: #fff;
+	color: #eee;
 	border-color: #000;
 }
 
@@ -2410,7 +2377,7 @@ a:active {
 .comment-form .form-submit input:hover,
 .comment-form .form-submit input:focus {
 	border-color: #000;
-	color: #fff;
+	color: #eee;
 }
 
 .comment-form label {
@@ -2700,7 +2667,7 @@ img.alignleft {
 .gallery-item a img {
 	padding: .5em;
 	margin: 0 auto;
-	border: 1px solid #fff;
+	border: 1px solid #eee;
 }
 
 .gallery-item a:hover img,
@@ -2762,7 +2729,7 @@ img.alignleft {
 	padding-bottom: 2.5em;
 	font-family: "Fira Sans", sans-serif;
 	text-align: center;
-	color: #fff;
+	color: #eee;
 	background: #000;
 }
 
@@ -2779,7 +2746,7 @@ img.alignleft {
 }
 
 .site-footer a {
-	color: #fff;
+	color: #eee;
 }
 
 .site-footer .social-links {

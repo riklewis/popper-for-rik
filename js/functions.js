@@ -112,22 +112,28 @@
 	var position, direction, previous;
 
 	$(window).scroll(function(){
-		if( $(this).scrollTop() >= position ){
+		var scrollTop = $(this).scrollTop();
+		if(scrollTop>10) {
+			$("html").addClass("scrolled");
+		}
+		else{
+			$("html").removeClass("scrolled");
+		}
+		if( scrollTop >= position ){
 			direction = 'down';
 			if(direction !== previous){
 				$('.menu-toggle').addClass('hide');
-
-				previous = direction;
-			}
-		} else {
-			direction = 'up';
-			if(direction !== previous){
-				$('.menu-toggle').removeClass('hide');
-
 				previous = direction;
 			}
 		}
-		position = $(this).scrollTop();
+		else {
+			direction = 'up';
+			if(direction !== previous){
+				$('.menu-toggle').removeClass('hide');
+				previous = direction;
+			}
+		}
+		position = scrollTop;
 	});
 
 	// Wrap centered images in a new figure element

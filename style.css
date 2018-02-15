@@ -1798,6 +1798,14 @@ html.scrolled .menu-toggle {
   height: 4em;
 }
 
+.entry-content section.project::after {
+	display: block;
+  content: "";
+  width: 3.5em;
+  border-bottom: 1px solid #c3c3c3;
+  margin: 4em auto 3em;
+}
+
 @media screen and (min-width: 30em) {
 
 	.entry-title.index-excerpt {

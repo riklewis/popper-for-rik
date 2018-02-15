@@ -148,10 +148,10 @@
 		}
     li.find("a").prepend('<i class="'+fa+' '+iconName+'"></i><br>');
 	}
-	addMenuIcon("menu-item-108","fa-info"); //about
-	addMenuIcon("menu-item-118","fa-lightbulb"); //projects
-	addMenuIcon("menu-item-109","fa-comments"); //contact
-	addMenuIcon("menu-item-110","fa-alarm-clock"); //now
+	addMenuIcon("menu-item-131","fa-info"); //about
+	addMenuIcon("menu-item-134","fa-lightbulb"); //projects
+	addMenuIcon("menu-item-132","fa-comments"); //contact
+	addMenuIcon("menu-item-133","fa-alarm-clock"); //now
 
 	// Open social share links in new windows
 	$(".share-post").on("click","a",function() {

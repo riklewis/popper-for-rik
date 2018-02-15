@@ -82,17 +82,19 @@ if ( ! function_exists( 'popper_entry_footer' ) ) :
 function popper_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
-		/* translators: used between category list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'popper' ) );
+		echo '<ul class="cat-and-tags-links">';
+
+		$categories_list = get_the_category_list( '</li><li>' );
 		if ( $categories_list && popper_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'popper' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			echo '<li>' . str_replace( 'rel="tag">', 'rel="tag"><i class="far fa-tags"></i> ', $categories_list) . '</li>';
 		}
 
-		/* translators: used between tag list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'popper' ) );
+		$tags_list = get_the_tag_list( '', '</li><li>' );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'popper' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			echo '<li>' . str_replace( 'rel="tag">', 'rel="tag"><i class="far fa-tag"></i> ', $tags_list) . '</li>';
 		}
+
+		echo '</ul>';
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
@@ -100,8 +102,6 @@ function popper_entry_footer() {
 		comments_popup_link( esc_html__( 'Leave a comment', 'popper' ), esc_html__( '1 Comment', 'popper' ), esc_html__( '% Comments', 'popper' ) );
 		echo '</span>';
 	}
-
-	edit_post_link( esc_html__( 'Edit', 'popper' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 

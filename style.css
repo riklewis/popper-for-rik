@@ -2090,7 +2090,6 @@ html.scrolled .menu-toggle {
 
 
 /* Entry footer + index entry meta */
-.entry-footer::before,
 .entry-footer::after {
 	display: block;
 	content: "";
@@ -2103,10 +2102,6 @@ html.scrolled .menu-toggle {
 .page .entry-footer::after {
 	border-bottom: none;
 	margin: 0;
-}
-
-.entry-footer::before {
-	width: 3.5em;
 }
 
 .entry-footer,
@@ -2143,7 +2138,23 @@ html.scrolled .menu-toggle {
 	color: #000;
 }
 
-
+.entry-footer .cat-and-tags-links ul {
+	padding: 0;
+}
+.entry-footer .cat-and-tags-links li {
+	display: inline-block;
+  margin: 0 1em 0 0;
+  text-align: center;
+}
+.entry-footer .cat-and-tags-links li a {
+	border: 1px solid #000;
+	display: inline-block;
+	padding: 1em;
+}
+.entry-footer .cat-and-tags-links li a:focus, .entry-footer .cat-and-tags-links li a:hover {
+  background-color: #000;
+	color: #fff;
+}
 
 /*--------------------------------------------------------------
 ## Asides

@@ -411,7 +411,7 @@ blockquote {
 	position: relative;
 	margin: 1.5em 0 1.5em 2em;
 	padding: 0 1em;
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: 300;
 	line-height: 1.4em;
 }
@@ -2138,22 +2138,28 @@ html.scrolled .menu-toggle {
 	color: #000;
 }
 
-.entry-footer .cat-and-tags-links ul {
+ul.cat-and-tags-links {
 	padding: 0;
+	text-align: center;
 }
-.entry-footer .cat-and-tags-links li {
+.cat-and-tags-links li {
 	display: inline-block;
   margin: 0 1em 0 0;
   text-align: center;
 }
-.entry-footer .cat-and-tags-links li a {
+.cat-and-tags-links li a {
 	border: 1px solid #000;
 	display: inline-block;
 	padding: 1em;
 }
-.entry-footer .cat-and-tags-links li a:focus, .entry-footer .cat-and-tags-links li a:hover {
+.cat-and-tags-links li a:focus, .cat-and-tags-links li a:hover {
   background-color: #000;
 	color: #fff;
+	border-bottom: 0;
+  box-shadow: none;
+}
+.entry-footer .edit-link {
+	display: none;
 }
 
 /*--------------------------------------------------------------
@@ -2295,12 +2301,12 @@ html.scrolled .menu-toggle {
 	line-height: 1.3em;
 }
 
-.says {
+.says, .small {
 	font-size: 80%;
 }
 
 .comment-metadata {
-    margin-top: .2em;
+  margin-top: .2em;
 	padding-bottom: .5em;
 	font-size: .8em;
 	line-height: 1em;

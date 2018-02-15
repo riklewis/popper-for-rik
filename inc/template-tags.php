@@ -28,7 +28,7 @@ function popper_posted_on() {
 	);
 
   $post_title = substr(esc_url(get_the_author_meta('display_name') . ' - ' . get_the_title()),7);
-	$permalink = esc_url(str_replace("http:","https:",get_permalink()); //wp-admin breaks if site address set to https:
+	$permalink = esc_url(str_replace("http:","https:",get_permalink())); //wp-admin breaks if site address set to https:
 
 	echo '<div class="meta-content">';
 	echo '<span class="posted-on">' . $time_string . ' </span>';

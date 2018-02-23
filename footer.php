@@ -42,7 +42,7 @@
 			<a href="https://plus.google.com/102686458792143420469" target="_blank" rel="noopener"><i class="fab fa-google-plus-g" aria-hidden="true"></i><span class="sr-only">Google Plus</span></a>
 			<a href="https://vimeo.com/riklewis" target="_blank" rel="noopener"><i class="fab fa-vimeo-v" aria-hidden="true"></i><span class="sr-only">Vimeo</span></a>
 			<a href="https://stackoverflow.com/users/4593106/rik-lewis" target="_blank" rel="noopener"><i class="fab fa-stack-overflow" aria-hidden="true"></i><span class="sr-only">Stack Overflow</span></a>
-			<a href="https://github.com/riklewis" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">Github</span></a>
+			<a href="https://github.com/riklewis" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>
 			<a href="https://www.npmjs.com/~riklewis" target="_blank" rel="noopener"><i class="fab fa-npm" aria-hidden="true"></i><span class="sr-only">NPM</span></a>
 			<a href="mailto:rik@rik.onl" target="_blank" rel="noopener"><i class="far fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></a>
 			<a href="skype:rik.p.lewis?add" target="_blank" rel="noopener"><i class="fab fa-skype" aria-hidden="true"></i><span class="sr-only">Skype</span></a>

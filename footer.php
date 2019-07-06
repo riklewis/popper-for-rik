@@ -39,7 +39,6 @@
 			<a href="https://www.facebook.com/riklewis" target="_blank" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
 			<a href="https://www.twitter.com/rik_lewis" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
 			<a href="https://www.linkedin.com/in/riklewis" target="_blank" rel="noopener"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
-			<a href="https://plus.google.com/102686458792143420469" target="_blank" rel="noopener"><i class="fab fa-google-plus-g" aria-hidden="true"></i><span class="sr-only">Google Plus</span></a>
 			<a href="https://vimeo.com/riklewis" target="_blank" rel="noopener"><i class="fab fa-vimeo-v" aria-hidden="true"></i><span class="sr-only">Vimeo</span></a>
 			<a href="https://stackoverflow.com/users/4593106/rik-lewis" target="_blank" rel="noopener"><i class="fab fa-stack-overflow" aria-hidden="true"></i><span class="sr-only">Stack Overflow</span></a>
 			<a href="https://github.com/riklewis" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>

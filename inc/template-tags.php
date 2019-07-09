@@ -263,7 +263,7 @@ function popper_modify_read_more_link() {
 	$read_more_link = sprintf(
 		/* translators: %s: Name of current post. */
 		wp_kses( __( 'Continue reading%s', 'popper' ), array( 'span' => array( 'class' => array() ) ) ),
-		the_title( ' <span class="screen-reader-text">"', '"</span>', false )
+		the_title( '<span class="screen-reader-text"> "', '"</span>', false )
 	);
 	$read_more_string =
 	'<div class="continue-reading">

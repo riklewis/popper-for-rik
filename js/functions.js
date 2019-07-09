@@ -164,4 +164,23 @@
 		hljs.highlightBlock(block);
 	});
 
+  // Allow theme switching (light/dark)
+  $('#theme-switch').on("change",function() {
+    var $html = $('html');
+    var value = "light";
+    if($html.hasClass("theme-dark")) {
+      $html.removeClass("theme-dark").addClass("theme-light");
+    }
+    else {
+      $html.removeClass("theme-light").addClass("theme-dark");
+      value = "dark";
+    }
+    var exdate = new Date();
+    exdate.setDate(exdate.getDate() + 365);
+    document.cookie = "theme=" + value + ";secure;expires=" + exdate.toUTCString();
+  });
+  if($('html').hasClass("theme-dark")) {
+    $('#theme-switch').prop("checked",true);
+  }
+
 } )( jQuery );

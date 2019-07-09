@@ -443,7 +443,7 @@ blockquote::before {
 }
 
 html.theme-dark blockquote::before {
-	color: #333;
+	color: #666;
 }
 
 
@@ -467,7 +467,7 @@ html.theme-dark blockquote::before {
 	}
 
 	html.theme-dark blockquote::after {
-		color: #333;
+		color: #666;
 	}
 }
 
@@ -2319,10 +2319,6 @@ html.theme-dark .share-post a:visited {
 	text-decoration: none;
 	color: #000;
 }
-html.theme-dark .entry-footer span a,
-html.theme-dark .index-entry-meta a {
-	color: #fff;
-}
 
 ul.cat-and-tags-links {
 	padding: 0;
@@ -2338,18 +2334,11 @@ ul.cat-and-tags-links {
 	display: inline-block;
 	padding: 1em;
 }
-html.theme-dark .cat-and-tags-links li a {
-	border: 1px solid #fff;
-}
 .cat-and-tags-links li a:focus, .cat-and-tags-links li a:hover {
   background-color: #000;
 	color: #fff;
 	border-bottom: 0;
   box-shadow: none;
-}
-html.theme-dark .cat-and-tags-links li a:focus, .cat-and-tags-links li a:hover {
-  background-color: #fff;
-	color: #000;
 }
 .entry-footer .edit-link {
 	display: none;
@@ -2992,9 +2981,9 @@ html.theme-dark .gallery-item a:focus img {
 	color: #eee;
 	background: #000;
 }
+
 html.theme-dark .site-footer {
-	color: #333;
-	background: #fff;
+	border-top: 1px solid #ededed;
 }
 
 .site-footer h3 {
@@ -3011,9 +3000,6 @@ html.theme-dark .site-footer {
 
 .site-footer a {
 	color: #eee;
-}
-html.theme-dark .site-footer a {
-	color: #333;
 }
 
 .site-footer .social-links {

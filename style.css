@@ -2085,13 +2085,14 @@ html.theme-dark .entry-content .continue-reading a:focus {
 	color: #000;
 	word-wrap: break-word; /* Catch and wrap very long words on small screens */
   text-transform: uppercase;
+	text-align: center;
 }
 html.theme-dark .entry-title {
 	color: #fff;
 }
 
-.entry-title:after {
-	content: ':-';
+.entry-icon {
+	font-size: 100px;
 }
 
 .entry-title a {

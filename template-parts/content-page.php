@@ -11,14 +11,20 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php 
+		<?php
 		if ( has_post_thumbnail() ) { ?>
 			<figure class="featured-image">
 				<?php the_post_thumbnail('popper-featured-image'); ?>
 			</figure>
 		<?php }
 		?>
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php
+		if ( get_field('fontawesome_icon') ) {
+      echo '<i class="entry-icon far ' . get_field('fontawesome_icon') . '"></i> <span class="screen-reader-text">' . get_the_title() . '</span>';
+		}
+		else {
+			the_title( '<h1 class="entry-title">', '</h1>' );
+		} ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -35,4 +41,3 @@
 		<?php edit_post_link( esc_html__( 'Edit', 'popper' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-

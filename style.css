@@ -1296,8 +1296,9 @@ html.theme-dark .site-content .widget .social-widget li a:hover {
 .site-header {
 	background-color: #000;
 }
+
 html.theme-dark .site-header {
-	background-color: #fff;
+	border-bottom: 1px solid #ededed;
 }
 
 .header-background-image {
@@ -1317,9 +1318,6 @@ html.theme-dark .site-header {
 	color: #fff;
 	text-transform: uppercase;
 	text-align: left;
-}
-html.theme-dark .site-title {
-	color: #000;
 }
 
 .site-title a {
@@ -1344,19 +1342,11 @@ html.theme-dark .site-title {
 	font-size: 110%;
 	color: #ededed;
 }
-html.theme-dark .site-description {
-	color: #333;
-}
 
 .header-background-image .site-title,
 .header-background-image .site-tite::after,
 .header-background-image .site-description {
 	text-shadow: #000 0 0 10px;
-}
-html.theme-dark .header-background-image .site-title,
-html.theme-dark .header-background-image .site-tite::after,
-html.theme-dark .header-background-image .site-description {
-	text-shadow: #fff 0 0 10px;
 }
 @media screen and (min-width: 50em) {
 	.site-header {
@@ -1404,28 +1394,16 @@ html.theme-dark .header-background-image .site-description {
 	line-height: 1.6em;
 	color: #eee;
 }
-html.theme-dark .main-navigation a {
-	color: #333;
-}
 
 .main-navigation a:hover,
 .main-navigation a:focus {
 	background: #eee;
 	color: #000;
 }
-html.theme-dark .main-navigation a:hover,
-html.theme-dark .main-navigation a:focus {
-	background: #333;
-	color: #fff;
-}
 
 .main-navigation a,
 .main-navigation ul ul li:lastchild a {
 	border-bottom: 1px solid #eee;
-}
-html.theme-dark .main-navigation a,
-html.theme-dark .main-navigation ul ul li:lastchild a {
-	border-bottom: 1px solid #333;
 }
 
 .main-navigation ul li:last-child a {
@@ -1480,11 +1458,6 @@ html.theme-dark .main-navigation ul ul li:lastchild a {
 	color: #eee;
 	text-transform: lowercase; /* Stop screen readers from reading the text as capital letters */
 }
-html.theme-dark .dropdown-toggle {
-	background-color: #fff;
-	border: 1px solid #333;
-	color: #333;
-}
 
 .dropdown-toggle::after {
 	content: "\e903";
@@ -1500,11 +1473,6 @@ html.theme-dark .dropdown-toggle {
 .dropdown-toggle:focus {
 	background-color: #eee;
 	color: #000;
-}
-html.theme-dark .dropdown-toggle:hover,
-html.theme-dark .dropdown-toggle:focus {
-	background-color: #333;
-	color: #fff;
 }
 
 .dropdown-toggle.toggle-on:after {
@@ -1528,16 +1496,9 @@ html.theme-dark .dropdown-toggle:focus {
 	border: solid 2px #eee;
 	transition: all ease-out 400ms;
 }
-html.theme-dark .menu-toggle {
-	color: #333;
-	border: solid 2px #333;
-}
 
 html.scrolled .menu-toggle {
 	background-color: #343331;
-}
-html.theme-dark.scrolled .menu-toggle {
-	background-color: #ccc;
 }
 
 .menu-toggle.hide {
@@ -1577,9 +1538,6 @@ html.theme-dark.scrolled .menu-toggle {
 	padding: 1em;
 	margin-bottom: 3em;
 	background-color: #000;
-}
-html.theme-dark .nav-menu {
-	background-color: #fff;
 }
 
 .main-navigation.toggled ul {
@@ -1660,9 +1618,6 @@ html.theme-dark .nav-menu {
 	.main-navigation ul ul {
 		outline: 1px solid #333;
 	}
-	html.theme-dark .main-navigation ul ul {
-		outline: 1px solid #c3c3c3;
-	}
 
 	/* Left-align drop-down menu items */
 	.main-navigation li li {
@@ -1682,10 +1637,6 @@ html.theme-dark .nav-menu {
 		color: #eee;
 		text-decoration: underline;
 	}
-	html.theme-dark .main-navigation a:hover,
-	html.theme-dark .main-navigation a:focus {
-		color: #333;
-	}
 
 	/* Create hover and focus contrast on drop-down items */
 	.main-navigation li li a:hover,
@@ -1693,11 +1644,6 @@ html.theme-dark .nav-menu {
 		background: #eee;
 		color: #000;
 		text-decoration: none;
-	}
-	html.theme-dark .main-navigation li li a:hover,
-	html.theme-dark .main-navigation li li a:focus {
-		background: #333;
-		color: #fff;
 	}
 
 	/* Position drop-down menus absolutely */
@@ -1708,9 +1654,6 @@ html.theme-dark .nav-menu {
 		z-index: 10;
 		margin-left: 0;
 		background: #000;
-	}
-	html.theme-dark .main-navigation ul ul.toggled-on {
-		background: #fff;
 	}
 
 	.main-navigation ul ul ul.toggled-on {
@@ -2006,12 +1949,12 @@ html.theme-dark .paging-navigation a:focus {
   bottom: 0;
   left: 0;
   pointer-events: none;
-  background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1) 90%);
   width: 100%;
   height: 4em;
 }
 html.theme-dark .entry-content.index-excerpt:after {
-  background-image: linear-gradient(to bottom, rgba(255,255,255, 1), rgba(255,255,255, 0) 90%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1) 90%);
 }
 
 .entry-content section.project::after {

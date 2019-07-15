@@ -17,7 +17,7 @@
 		<div class="site-info">
 			<div class="column column-1">
 	      <h3>About Rik</h3>
-				<p><a href="https://www.rik.onl/about/">Rik Lewis</a> is a Certified Geek, specialising in Uniface, PHP, javascript/jQuery and progressive web apps. He rarely talks about himself in the third person...</p>
+				<p><a href="https://www.riklewis.com/about/">Rik Lewis</a> is a Certified Geek, specialising in Uniface, PHP, javascript/jQuery and progressive web apps. He rarely talks about himself in the third person...</p>
 			</div><!-- .column-1 -->
 			<div class="column column-2">
 	      <h3>Copyright <?php echo date("Y");?></h3>
@@ -27,11 +27,11 @@
 	      <h3>Navigation</h3>
 				<p>
 				  <a href="#page">Back to top</a>,&nbsp;
-				  <a href="https://www.rik.onl">Home</a>,&nbsp;
-				  <a href="https://www.rik.onl/about/">About</a>,&nbsp;
-				  <a href="https://www.rik.onl/projects/">Projects</a>,&nbsp;
-				  <a href="https://www.rik.onl/now/">Now</a>,&nbsp;
-				  <a href="https://www.rik.onl/contact/">Contact</a>
+				  <a href="https://www.riklewis.com">Home</a>,&nbsp;
+				  <a href="https://www.riklewis.com/about/">About</a>,&nbsp;
+				  <a href="https://www.riklewis.com/projects/">Projects</a>,&nbsp;
+				  <a href="https://www.riklewis.com/now/">Now</a>,&nbsp;
+				  <a href="https://www.riklewis.com/contact/">Contact</a>
 				</p>
 			</div><!-- .column-3 -->
 		</div><!-- .site-info -->

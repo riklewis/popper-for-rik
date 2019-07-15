@@ -55,5 +55,7 @@
 
 <?php wp_footer(); ?>
 
+<script defer>(function(){var b=-1<navigator.userAgent.toLowerCase().indexOf("webkit"),c=-1<navigator.userAgent.toLowerCase().indexOf("opera"),d=-1<navigator.userAgent.toLowerCase().indexOf("msie");(b||c||d)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var a=location.hash.substring(1);/^[A-z0-9_-]+$/.test(a)&&(a=document.getElementById(a))&&(/^(?:a|select|input|button|textarea)$/i.test(a.tagName)||(a.tabIndex=-1),a.focus())},!1)})();</script>
+
 </body>
 </html>

@@ -131,20 +131,22 @@ function popper_scripts() {
 	wp_enqueue_style( 'popper-google-fonts', '//fonts.googleapis.com/css?family=Fredericka+the+Great|Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic|Merriweather:400,300,300italic,400italic,700,700italic' );
 	wp_enqueue_style( 'popper-icons', get_template_directory_uri() . '/icons/style.css' );
 
-	wp_enqueue_script( 'popper-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '', true );
+  // Added to header.php as inline script
+	//wp_enqueue_script( 'popper-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
 	// Font Awesome 5 Pro
-	wp_enqueue_script( 'popper-fa-core', get_template_directory_uri() . '/js/fontawesome.min.js', array(), '5.0.6' );
-	wp_enqueue_script( 'popper-fa-brands', get_template_directory_uri() . '/js/fa-brands.min.js', array( 'popper-fa-core' ), '5.0.6' );
-	wp_enqueue_script( 'popper-fa-regular', get_template_directory_uri() . '/js/fa-regular.min.js', array( 'popper-fa-core' ), '5.0.6' );
-	wp_enqueue_script( 'popper-fa-solid', get_template_directory_uri() . '/js/fa-solid.min.js', array( 'popper-fa-core' ), '5.0.6' );
+	wp_enqueue_script( 'popper-fa-core', get_template_directory_uri() . '/js/fontawesome.min.js', array(), '5.0.6', true );
+	wp_enqueue_script( 'popper-fa-brands', get_template_directory_uri() . '/js/fa-brands.min.js', array( 'popper-fa-core' ), '5.0.6', true );
+	wp_enqueue_script( 'popper-fa-regular', get_template_directory_uri() . '/js/fa-regular.min.js', array( 'popper-fa-core' ), '5.0.6', true );
+	wp_enqueue_script( 'popper-fa-solid', get_template_directory_uri() . '/js/fa-solid.min.js', array( 'popper-fa-core' ), '5.0.6', true );
 
 	// Highlight JS
-  wp_enqueue_script( 'popper-highlight', get_template_directory_uri() . '/js/highlight.pack.js', array(), '9.12.0' );
-	wp_enqueue_style( 'popper-highlight-theme', get_template_directory_uri() . '/styles/atom-one-dark.css', array(), '9.12.0' );
+  wp_enqueue_script( 'popper-highlight', get_template_directory_uri() . '/js/highlight.pack.js', array(), '9.12.0', true );
+	wp_enqueue_style( 'popper-highlight-theme', get_template_directory_uri() . '/styles/atom-one-dark.css', array(), '9.12.0', true );
 
 	wp_localize_script( 'popper-functions', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'popper' ) . '</span>',
@@ -158,7 +160,7 @@ add_action( 'wp_enqueue_scripts', 'popper_scripts' );
  */
 function defer_fa_scripts( $tag, $handle, $src )
 {
-  if( $handle === 'popper-fa-brands' || $handle === 'popper-fa-regular')  {
+  if( $handle === 'popper-fa-core' ||  $handle === 'popper-fa-brands' || $handle === 'popper-fa-regular' || $handle === 'popper-fa-solid' || $handle === 'popper-highlight' || $handle === 'popper-highlight-theme' )  {
     return str_replace( '<script', '<script defer', $tag );
   }
   return $tag;

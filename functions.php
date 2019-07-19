@@ -146,7 +146,7 @@ function popper_scripts() {
 
 	// Highlight JS
   wp_enqueue_script( 'popper-highlight', get_template_directory_uri() . '/js/highlight.pack.js', array(), '9.12.0', true );
-	wp_enqueue_style( 'popper-highlight-theme', get_template_directory_uri() . '/styles/atom-one-dark.css', array(), '9.12.0', true );
+	wp_enqueue_style( 'popper-highlight-theme', get_template_directory_uri() . '/styles/atom-one-dark.min.css' );
 
 	// Main theme functions
 	wp_enqueue_script( 'popper-main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery','popper-highlight' ), '1.0.2', true );

@@ -125,8 +125,8 @@ add_action( 'widgets_init', 'popper_widgets_init' );
  * Enqueue scripts and styles.
  */
 function popper_scripts() {
-	wp_enqueue_style( 'popper-style', get_stylesheet_uri(), array(), '1.0.1');
-  wp_enqueue_script( 'popper-functions', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.0.1', true );
+	wp_enqueue_style( 'popper-style', get_stylesheet_uri(), array(), '1.0.2');
+  wp_enqueue_script( 'popper-functions', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.0.2', true );
 
 	wp_enqueue_style( 'popper-google-fonts', '//fonts.googleapis.com/css?family=Fredericka+the+Great|Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic|Merriweather:400,300,300italic,400italic,700,700italic' );
 	wp_enqueue_style( 'popper-icons', get_template_directory_uri() . '/icons/style.min.css' );
@@ -146,7 +146,10 @@ function popper_scripts() {
 
 	// Highlight JS
   wp_enqueue_script( 'popper-highlight', get_template_directory_uri() . '/js/highlight.pack.js', array(), '9.12.0', true );
-	wp_enqueue_style( 'popper-highlight-theme', get_template_directory_uri() . '/styles/atom-one-dark.min.css', array(), '9.12.0', true );
+	wp_enqueue_style( 'popper-highlight-theme', get_template_directory_uri() . '/styles/atom-one-dark.css', array(), '9.12.0', true );
+
+	// Main theme functions
+	wp_enqueue_script( 'popper-main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery','popper-highlight' ), '1.0.2', true );
 
 	wp_localize_script( 'popper-functions', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'popper' ) . '</span>',
@@ -160,13 +163,12 @@ add_action( 'wp_enqueue_scripts', 'popper_scripts' );
  */
 function defer_theme_scripts( $tag, $handle, $src ) {
 	$tag = str_replace(' type="text/javascript"','',str_replace(" type='text/javascript'",'',$tag));
-  if( $handle === 'popper-fa-core' ||  $handle === 'popper-fa-brands' || $handle === 'popper-fa-regular' || $handle === 'popper-fa-solid' || $handle === 'popper-highlight' || $handle === 'popper-highlight-theme' ) {
+  if( $handle === 'popper-fa-core' ||  $handle === 'popper-fa-brands' || $handle === 'popper-fa-regular' || $handle === 'popper-fa-solid' || $handle === 'popper-highlight' || $handle === 'popper-main-js' ) {
     return str_replace( '<script', '<script defer', $tag );
   }
   return $tag;
 }
 add_filter( 'script_loader_tag', 'defer_theme_scripts', 10, 3 );
-
 
 /**
  * Implement the Custom Header feature.

@@ -4,7 +4,7 @@ Theme URI: https://github.com/riklewis/popper-for-rik
 Author: Rik Lewis
 Author URI: https://www.rik.onl
 Description: Custom theme, based on Popper by Morten Rand-Hendriksen (http://mor10.com)
-Version: 1.0.0
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: popper
@@ -163,10 +163,6 @@ figure {
 hr {
 	box-sizing: content-box;
 	height: 0;
-}
-
-pre {
-	overflow: auto;
 }
 
 code,
@@ -353,7 +349,7 @@ address {
 }
 
 pre {
-	background: #eee;
+	background: #c3c3c3;
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
@@ -362,9 +358,6 @@ pre {
 	max-width: 100%;
 	overflow: auto;
 	padding: 1.6em;
-}
-pre {
-	background: #c3c3c3;
 }
 
 code,

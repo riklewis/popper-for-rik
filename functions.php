@@ -128,7 +128,7 @@ function popper_scripts() {
 	wp_enqueue_style( 'popper-style', get_stylesheet_uri(), array(), '1.0.2');
   wp_enqueue_script( 'popper-functions', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.0.2', true );
 
-	wp_enqueue_style( 'popper-google-fonts', 'https://fonts.googleapis.com/css?family=Fredericka+the+Great|Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic|Merriweather:400,300,300italic,400italic,700,700italic' );
+	wp_enqueue_style( 'popper-google-fonts', 'https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,700,700italic|Merriweather:400,400italic,700,700italic' );
 	wp_enqueue_style( 'popper-icons', get_template_directory_uri() . '/icons/style.min.css' );
 
   // Added to header.php as inline script

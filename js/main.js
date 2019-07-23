@@ -16,14 +16,9 @@
 	// Wrap centered images in a new figure element
 	$('img.aligncenter').wrap('<figure class="centered-image"></figure>');
 
-  // Add primary menu icons - todo: current should be solid
+  // Add primary menu icons
 	function addMenuIcon(listItemId,iconName) {
-		var fa = "far";
-		var li = $("#"+listItemId);
-		if(li.hasClass("current-menu-item") || li.hasClass("current-menu-ancestor") || li.hasClass("current_page_item") || li.hasClass("current_page_ancestor")) {
-			fa = "fas";
-		}
-    li.find("a").prepend('<i class="'+fa+' '+iconName+'"></i><br>');
+    $("#"+listItemId).find("a").prepend('<i class="far '+iconName+'"></i><br>');
 	}
 	addMenuIcon("menu-item-131","fa-info"); //about
 	addMenuIcon("menu-item-134","fa-lightbulb"); //projects

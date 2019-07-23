@@ -3113,3 +3113,8 @@ a[data-copy] svg {
 a[data-copy].copying svg {
 	transform: scale(2);
 }
+
+/* Active menu item */
+a[aria-current='page'] {
+  text-decoration: underline;
+}

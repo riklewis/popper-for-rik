@@ -3093,3 +3093,23 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 13px;
 }
+
+/* Screenreaders */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Copy to clipboard */
+a[data-copy] svg {
+	transition: transform .8s ease-in-out;
+}
+a[data-copy].copying svg {
+	transform: scale(2);
+}

@@ -139,10 +139,10 @@ function popper_scripts() {
 	}
 
 	// Font Awesome 5 Pro
-	wp_enqueue_script( 'popper-fa-core', get_template_directory_uri() . '/js/fontawesome.min.js', array(), '5.0.6', true );
-	wp_enqueue_script( 'popper-fa-brands', get_template_directory_uri() . '/js/fa-brands.min.js', array( 'popper-fa-core' ), '5.0.6', true );
-	wp_enqueue_script( 'popper-fa-regular', get_template_directory_uri() . '/js/fa-regular.min.js', array( 'popper-fa-core' ), '5.0.6', true );
-	wp_enqueue_script( 'popper-fa-solid', get_template_directory_uri() . '/js/fa-solid.min.js', array( 'popper-fa-core' ), '5.0.6', true );
+	wp_enqueue_script( 'popper-fa-core', get_template_directory_uri() . '/js/fontawesome.min.js', array(), '5.9.0', true );
+	wp_enqueue_script( 'popper-fa-brands', get_template_directory_uri() . '/js/brands.min.js', array( 'popper-fa-core' ), '5.9.0', true );
+	wp_enqueue_script( 'popper-fa-regular', get_template_directory_uri() . '/js/regular.min.js', array( 'popper-fa-core' ), '5.9.0', true );
+	wp_enqueue_script( 'popper-fa-solid', get_template_directory_uri() . '/js/solid.min.js', array( 'popper-fa-core' ), '5.9.0', true );
 
 	// Highlight JS
   wp_enqueue_script( 'popper-highlight', get_template_directory_uri() . '/js/highlight.pack.js', array(), '9.12.0', true );

@@ -46,7 +46,7 @@
 			<a href="https://www.npmjs.com/~riklewis" target="_blank" rel="noopener"><i class="fab fa-npm" aria-hidden="true"></i><span class="sr-only">NPM</span></a>
 			<a href="mailto:rik@riklewis.com" target="_blank" rel="noopener"><i class="far fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></a>
 			<a href="skype:rik.p.lewis?add" target="_blank" rel="noopener"><i class="fab fa-skype" aria-hidden="true"></i><span class="sr-only">Skype</span></a>
-			<a href="feed/" target="_blank" rel="noopener"><i class="fas fa-rss" aria-hidden="true"></i><span class="sr-only">RSS Feed</span></a>
+			<a href="/feed/" target="_blank" rel="noopener"><i class="far fa-rss" aria-hidden="true"></i><span class="sr-only">RSS Feed</span></a>
 			<a href="https://www.paypal.me/riklewis" target="_blank" rel="noopener"><i class="fab fa-paypal" aria-hidden="true"></i><span class="sr-only">Paypal</span></a>
 			<a href="https://www.patreon.com/riklewis" target="_blank" rel="noopener"><i class="fab fa-patreon" aria-hidden="true"></i><span class="sr-only">Patreon</span></a>
 		</div><!-- .social-links -->

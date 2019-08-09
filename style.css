@@ -4,7 +4,7 @@ Theme URI: https://github.com/riklewis/popper-for-rik
 Author: Rik Lewis
 Author URI: https://www.rik.onl
 Description: Custom theme, based on Popper by Morten Rand-Hendriksen (http://mor10.com)
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: popper
@@ -2327,11 +2327,18 @@ ul.cat-and-tags-links {
 	display: inline-block;
 	padding: 1em;
 }
+html.theme-dark .cat-and-tags-links li a {
+	border: 1px solid #fff;
+}
 .cat-and-tags-links li a:focus, .cat-and-tags-links li a:hover {
   background-color: #000;
 	color: #fff;
 	border-bottom: 0;
   box-shadow: none;
+}
+html.theme-dark .cat-and-tags-links li a:focus, html.theme-dark .cat-and-tags-links li a:hover {
+  background-color: #fff;
+	color: #000;
 }
 .entry-footer .edit-link {
 	display: none;

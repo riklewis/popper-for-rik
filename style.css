@@ -3125,3 +3125,8 @@ a[data-copy].copying svg {
 a[aria-current='page'] {
   text-decoration: underline;
 }
+
+/* SSE testing */
+.good-actor {
+	display: none;
+}

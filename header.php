@@ -14,6 +14,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="flattr:id" content="2ekp97">
 <link rel="profile" href="https://gmpg.org/xfn/11">
 <link rel="author" href="https://www.riklewis.com/humans.txt" type="text/plain">
 <?php wp_head(); ?>

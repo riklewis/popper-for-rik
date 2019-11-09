@@ -49,7 +49,7 @@
     }
     var exdate = new Date();
     exdate.setDate(exdate.getDate() + 365);
-    document.cookie = "theme=" + value + ";secure;expires=" + exdate.toUTCString();
+    document.cookie = "riklewis_theme=" + value + ";secure;expires=" + exdate.toUTCString();
   });
   if($('html').hasClass("theme-dark")) {
     $('#theme-switch').prop("checked",true);

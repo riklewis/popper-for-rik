@@ -10,7 +10,7 @@
  */
 
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?> class="theme-<?php echo (isset($_COOKIE["theme"]) ? $_COOKIE["theme"] : 'light'); ?>">
+<html <?php language_attributes(); ?> class="theme-<?php echo (isset($_COOKIE["riklewis_theme"]) && $_COOKIE["riklewis_theme"]==='dark' ? 'dark' : 'light'); ?>">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">

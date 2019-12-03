@@ -50,4 +50,43 @@
 		<?php endif; ?>
 	</header><!-- #masthead -->
 
+	<ul class="lightrope">
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	</ul>
+
 	<div id="content" class="site-content">

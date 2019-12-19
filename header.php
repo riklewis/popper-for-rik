@@ -50,11 +50,4 @@
 		<?php endif; ?>
 	</header><!-- #masthead -->
 
-  <?php
-	  if(date('n')==12) {
-	?>
-	<ul class="lightrope">
-	  <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-	</ul>
-<?php } ?>
 	<div id="content" class="site-content">
